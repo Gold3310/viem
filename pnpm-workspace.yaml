@@ -50,7 +50,7 @@ auditConfig:
     - GHSA-jmr9-qjv8-65gv
 
 overrides:
-  ox: 0.14.34
+  ox: 0.14.44
   typescript: ^5.9.3
   '@opentelemetry/api@^1.8.0': ~1.7.0
   permissionless>viem: workspace:*
@@ -65,6 +65,7 @@ overrides:
   '@opentelemetry/propagator-jaeger@<2.9.0': 2.9.0
   ajv@<8.18.0: 8.18.0
   brace-expansion@>=2.0.0 <=2.0.1: 2.0.2
+  browserslist@<=4.28.6: 4.28.7
   cookie@<0.7.0: ^0.7.0
   cross-spawn@<6.0.6: '>=6.0.6'
   cross-spawn@>=7.0.0 <7.0.5: '>=7.0.5'

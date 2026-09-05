@@ -1,5 +1,29 @@
 # viem
 
+## 2.56.3
+
+### Patch Changes
+
+- [#5059](https://github.com/wevm/viem/pull/5059) [`e3de334a73bd06ee16ba6a1e30e1bb2cf94ea708`](https://github.com/wevm/viem/commit/e3de334a73bd06ee16ba6a1e30e1bb2cf94ea708) Thanks [@jxom](https://github.com/jxom)! - Made Tempo Zone return types portable across declaration-emitting projects.
+
+- [#5061](https://github.com/wevm/viem/pull/5061) [`1ba6aa3860bcbe2c1c51257b1a2c386d182507e7`](https://github.com/wevm/viem/commit/1ba6aa3860bcbe2c1c51257b1a2c386d182507e7) Thanks [@jxom](https://github.com/jxom)! - `viem/tempo`: Added chain inference to `Multisig.handleRequest` downstream request options.
+
+## 2.56.2
+
+### Patch Changes
+
+- [#5042](https://github.com/wevm/viem/pull/5042) [`5df98198c47cb898ba35a1afcd2abd5d0cbcc371`](https://github.com/wevm/viem/commit/5df98198c47cb898ba35a1afcd2abd5d0cbcc371) Thanks [@Wagalidoom](https://github.com/Wagalidoom)! - Fixed `isHash` returning `true` for odd-length hex strings. `size` rounds odd-length hex up to the next whole byte, so a 63-character hex string reported a size of 32 and passed the check. `isHash` now validates the length directly.
+
+- [#4913](https://github.com/wevm/viem/pull/4913) [`ef4be8eb45abc773587abb1df7fd8791acf30413`](https://github.com/wevm/viem/commit/ef4be8eb45abc773587abb1df7fd8791acf30413) Thanks [@Kropiunig](https://github.com/Kropiunig)! - Fixed signed `hexToBigInt` and `hexToNumber` calls with odd-length hex values.
+
+- [#5029](https://github.com/wevm/viem/pull/5029) [`dd7d792dd84f57d1784af56058fe88d3149a44fb`](https://github.com/wevm/viem/commit/dd7d792dd84f57d1784af56058fe88d3149a44fb) Thanks [@jxom](https://github.com/jxom)! - `viem/tempo`: Added Multisig accounts.
+
+## 2.56.1
+
+### Patch Changes
+
+- [#5052](https://github.com/wevm/viem/pull/5052) [`e336a1d93a39063fb1883ba0a84b5d37f313a35a`](https://github.com/wevm/viem/commit/e336a1d93a39063fb1883ba0a84b5d37f313a35a) Thanks [@jxom](https://github.com/jxom)! - `viem/tempo`: Fixed declaration emit for inferred Tempo chains.
+
 ## 2.56.0
 
 ### Minor Changes

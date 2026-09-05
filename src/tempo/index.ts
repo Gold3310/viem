@@ -15,6 +15,7 @@ export {
   Channel,
   EarnShares,
   MultisigConfig,
+  MultisigOperation,
   Period,
   ReceivePolicyReceipt,
   TempoAddress,
@@ -23,6 +24,10 @@ export {
   VirtualAddress,
   VirtualMaster,
 } from 'ox/tempo'
+export type {
+  /** @deprecated */
+  Owner as z_MultisigConfigOwner,
+} from 'ox/tempo/MultisigConfig'
 export {
   type CustomTransport,
   type CustomTransportConfig,
@@ -67,12 +72,14 @@ export * from './errors.js'
 export * as Formatters from './Formatters.js'
 export * as Hardfork from './Hardfork.js'
 export * as KeyAuthorizationManager from './KeyAuthorizationManager.js'
+/** @experimental */
+export * as Multisig from './Multisig.js'
 export * as P256 from './P256.js'
 /** @experimental */
 export * as Scopes from './Scopes.js'
 /** @experimental */
 export * as Selectors from './Selectors.js'
-export * as Storage from './Storage.js'
+export * as Store from './Store.js'
 export * as TokenIds from './TokenIds.js'
 // Export types required for inference.
 export type {
@@ -110,6 +117,7 @@ export {
   http,
   walletNamespaceCompat,
   withFeePayer,
+  withMultisig,
   withRelay,
 } from './Transport.js'
 export * as WebAuthnP256 from './WebAuthnP256.js'
